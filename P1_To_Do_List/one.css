@@ -41,3 +41,15 @@
     transition: 0.3s;
 }
 
+.todo-app:hover{
+    transform: translateY(-6px);
+}
+
+.todo-app h2{
+    color:#002765;
+    display:flex;
+    align-items:center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
