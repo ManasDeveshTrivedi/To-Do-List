@@ -6,3 +6,19 @@ function addTask(){
     if(inputBox.value===''){
         alert("You must write something!");
     }
+    else{
+        let li=document.createElement("li");
+        let taskText = inputBox.value;
+        let deadline = deadlineInput.value;
+        let timeLeft = "";
+        if(deadline){
+            let diff = new Date(deadline) - new Date();
+            let hours = Math.floor(diff / (1000 * 60 * 60));
+            if(hours < 0){
+                timeLeft = " (Overdue)";
+            } else {
+                timeLeft = ` (${hours} hrs left)`;
+            }
+        }
+
+        
