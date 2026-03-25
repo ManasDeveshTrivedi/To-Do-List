@@ -28,4 +28,8 @@ function addTask(){
         li.appendChild(span);
     }
 
-    
+    inputBox.value= "";
+    deadlineInput.value = "";
+    saveData();
+}
+
