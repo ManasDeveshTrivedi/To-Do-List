@@ -33,3 +33,12 @@ function addTask(){
     saveData();
 }
 
+listContainer.addEventListener('click', function(e){
+    if(e.target.tagName.toLowerCase() === "li"){
+        e.target.classList.toggle("checked");
+        if(e.target.classList.contains("checked")){
+            listContainer.appendChild(e.target);
+        } else {
+            listContainer.prepend(e.target);
+        }
+        saveData();
