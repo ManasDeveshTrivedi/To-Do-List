@@ -70,3 +70,13 @@
     flex-wrap: wrap;
 }
 
+#input-box{
+    flex: 1 1 50%;
+    min-width: 120px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
