@@ -165,3 +165,7 @@ ul li span{
     transition: 0.2s;
 }
 
+ul li span:hover{
+    background: #e6e6e6;
+    transform: scale(1.1);
+}
