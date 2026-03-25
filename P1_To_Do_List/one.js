@@ -42,3 +42,10 @@ listContainer.addEventListener('click', function(e){
             listContainer.prepend(e.target);
         }
         saveData();
+    }
+    else if(e.target.tagName.toLowerCase() === "span"){
+        e.target.parentElement.remove();
+        saveData();
+    }
+}, false);
+
